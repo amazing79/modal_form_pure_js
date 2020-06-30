@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/lvw_data.js"></script>
+    <title>Form Abm</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table-data">
+            <h1>AMB - USUARIOS</h1>
+            <form action="#">
+                <div class="lvw-personas" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="data-key">Key</th>
+                            <th>Apellido</th>
+                            <th>Nombre</th>
+                            <th>documento</th>
+                            <th>Mail</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lvw-data" data-keyitem="0">
+                    </tbody>
+                </table>
+                </div>
+                <div class="button-panel">
+                    <a href="#show-frm" class="btn primary" >Agregar</a>
+                    <button class="btn">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="frm-modal" id="show-frm">
+        <div class="user-form">
+            <input type="hidden" id="hdnkey" name="hdnkey"  value="0">
+            <label for="txtapellido">Apellido</label>
+            <input type="text" placeholder="Ingrese Apellido" id="txtapellido" name="txtapellido">
+            <label for="txtapellido">Nombre</label>
+            <input type="text" placeholder="Ingrese Nombre" id="txtnombre" name="txtnombre">
+            <label for="txtapellido">DNI</label>
+            <input type="number" placeholder="DNI" id="txtdni" name="txtdni">
+            <label for="txtapellido">Email</label>
+            <input type="mail" placeholder="Mail" id="txtmail" name="txtmail">
+            <div class="button-frm">
+                <button onclick="evt_proccess_info();" id="data-proccess" class="btn primary" data-action="save">Guardar</button>
+                <a href="#" onclick="clearInputs(); " class="btn secondary">Cancelar</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
