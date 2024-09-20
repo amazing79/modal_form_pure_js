@@ -10,7 +10,7 @@ export class Lvw {
     makeCaption()
     {
         let _caption = document.createElement('caption');
-        _caption.innerText = 'Lista de Elementos';
+        _caption.innerText = this._name;
         return _caption;
 
     }
@@ -42,37 +42,6 @@ export class Lvw {
             _tbody.appendChild(this.addRow(item));
         })
         return _tbody;
-        `
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Servicios</td>
-            <td>caros</td>
-            <td>
-                <a href="#" target="_blank" rel="noopener noreferrer">Edit</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Delete</a>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">1</th>
-            <td>Servicios</td>
-            <td>caros</td>
-            <td>
-                <a href="#" target="_blank" rel="noopener noreferrer">Edit</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Delete</a>
-            </td>
-        </tr>
-        <tr>
-            <th scope="row">1</th>
-            <td>Servicios</td>
-            <td>caros</td>
-            <td>
-                <a id="editBtn" href="#" target="_blank" rel="noopener noreferrer">Edit</a>
-                <a id="deleteBtn" href="#" target="_blank" rel="noopener noreferrer">Delete</a>
-            </td>
-        </tr>
-    </tbody>
-        `
     }
 
     addRow(itemData)
