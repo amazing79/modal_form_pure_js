@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lvw test</title>
+    <link rel="stylesheet" href="assets/css/lvw_styles.css">
+    <script src="assets/js/app.js" type="module" defer></script>
+</head>
+<body>
+
+        <section>
+            <div class="frm-modal" id="show-frm">
+                <div class="user-form">
+                    <input type="hidden" id="hdnkey" name="hdnkey"  value="0">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" placeholder="Ingrese Descripcion" id="descripcion" name="descripcion">
+                    <div class="button-frm">
+                        <button onclick="evt_process_info();" id="data-proccess" class="btn primary" data-action="save">Guardar</button>
+                        <a href="#" onclick="clearInputs(); " class="btn secondary">Cancelar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lvw_data_test" class="container">
+        </div>
+       
+        <dialog id="confirm_dialog">
+            <h3 class="dialog__title">SCG - Categor&iacute;as</h3>
+            <div class="dialog__body">
+                <form>
+                    <p>¿Est&aacute; seguro que desea eliminar la categor&iacute;a seleccionada?</p>
+                    <br />
+                    <div class="button-frm">
+                        <button id="cancelBtn" class="btn" formmethod="dialog">Cancelar</button>
+                        <button id="confirmBtn" class="btn" value="default">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog id="result_dialog">
+            <h3 class="dialog__title">SCG - Categor&iacute;as</h3>
+            <div class="dialog__body">
+                <form>
+                    <p>¿Est&aacute; seguro que desea eliminar la categor&iacute;a seleccionada?</p>
+                    <br />
+                    <div class="button-frm">
+                        <button id="closeBtn" class="btn" formmethod="dialog">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>
