@@ -73,4 +73,13 @@ table {
     top: 0vh;
     opacity: 1;
 }
-  
+
+.user-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    background-color:#EAECEE;
+    padding: 20px;
+    border-radius: 5px;
+}
